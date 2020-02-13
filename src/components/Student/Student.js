@@ -22,6 +22,7 @@ export default class Student extends Component {
   }
 
   render() {
+    // console.log(this.props);
     return (
       <div className="box">
         <h1>Student:</h1>
@@ -31,7 +32,7 @@ export default class Student extends Component {
         <h3>Grade: {this.state.studentInfo.grade}</h3>
         <h3>Email: {this.state.studentInfo.email}</h3>
 
-        {/* <button onClick={this.props.goBack}>Back</button> */}
+        <button onClick={this.props.history.goBack}>Back</button>
       </div>
     );
   }
